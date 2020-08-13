@@ -1,0 +1,390 @@
+/* Setting up the page */
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+/* Headings */
+
+h1 {
+  margin: 4rem auto 1.85rem auto;
+  max-width: 25ch;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: hsl(192, 100%, 9%);
+}
+
+h2 {
+  margin: 4rem 0 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsl(192, 100%, 9%);
+}
+
+/* Top Section */
+
+.hero {
+  background: url('../images/bg-hero-mobile.svg');
+  background-color: hsl(193, 100%, 96%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem 0;
+  color: hsl(192, 100%, 9%);
+}
+
+.logo {
+  width: 125px;
+  cursor: pointer;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 55ch;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.5;
+  font-weight: 600;
+  color: hsl(193, 76%, 17%);
+}
+
+.image-mockup {
+  width: 100%;
+}
+
+/* Buttons */
+
+.cta-button {
+  padding: 0.85rem 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 60px;
+
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+}
+
+.navbar-button {
+  padding: 0.4rem 1.5rem;
+  border: none;
+  border-radius: 50px / 150%;
+
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 2px 0px 23px -13px rgba(1, 49, 51, 0.8);
+  background-color: white;
+}
+
+/* Card Section */
+
+.card-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3rem 2rem 15rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 3rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  max-width: 1600px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card p {
+  line-height: 1.65;
+  max-width: 65ch;
+  color: hsl(208, 11%, 45%);
+}
+
+.cta-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-card {
+  position: relative;
+  bottom: 9rem;
+
+  text-align: center;
+  border-radius: 20px;
+  padding: 1rem 0;
+  color: black;
+  background-color: white;
+}
+
+.cta-card h2 {
+  margin: 2rem 0 0 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.cta-card .cta-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer Section */
+
+footer {
+  font-family: inherit;
+  padding: 1rem;
+  color: white;
+  background-color: hsl(192, 100%, 9%);
+}
+
+.logo-white {
+  width: 160px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.contact {
+  padding-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 2rem;
+}
+
+.contact-info img {
+  margin-top: 5px;
+  margin-right: 2rem;
+}
+
+.contact-info p {
+  max-width: 40ch;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.social-copyright {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.social span {
+  margin: 0.5rem 0.5rem 1.5rem;
+  border: solid 1px;
+  border-radius: 100%;
+  cursor: pointer;
+  color: white;
+}
+
+.social-facebook {
+  padding: 6px 10px;
+}
+
+.social-twitter {
+  padding: 6px 7px;
+}
+
+.social-instagram {
+  padding: 6px 8px;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-bottom: 3rem;
+}
+
+/* Bits & Bobs */
+
+.shadow {
+  box-shadow: 2px 0px 23px -13px rgba(1, 49, 51, 0.5);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* For desktop screens and up */
+
+@media (min-width: 996px) {
+  /* The changes here to hero-wrapper, card and footer-wrapper are the main changes that provide page responsiveness */
+  .hero-wrapper {
+    flex-flow: row;
+
+    padding: 4rem 6rem;
+  }
+
+  .card {
+    flex-flow: row;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .image-container {
+    order: 1;
+  }
+
+  h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  navbar-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 2rem 6rem 0;
+    max-width: 1806px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 170px;
+  }
+
+  .navbar-button {
+    padding: 0.75rem 3.2rem;
+    margin-right: 8rem;
+  }
+
+  .cta-button {
+    padding: 1.2rem 5.5rem;
+  }
+
+  .card-wrapper {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+
+  .image-mockup {
+    width: 80%;
+  }
+
+  .title-container {
+    text-align: left;
+  }
+
+  .hero-text {
+    margin: 0;
+    line-height: 1.75;
+  }
+
+  .card-image {
+    width: 60%;
+  }
+
+  .card-text-container {
+    margin-bottom: 5rem;
+  }
+
+  .cta-card {
+    width: 50rem;
+  }
+
+  footer {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .footer-nav div {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .footer-nav ul {
+    margin-top: 4rem;
+  }
+
+  .footer-nav li {
+    padding-bottom: 2rem;
+  }
+
+  .social-copyright {
+    align-items: flex-start;
+  }
+
+  .social {
+    margin-top: 1rem;
+  }
+
+  .social span {
+    margin: 0 1rem 1.5rem 0;
+  }
+
+  .copyright {
+    margin-top: 12rem;
+  }
+}
