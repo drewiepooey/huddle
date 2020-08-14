@@ -95,6 +95,7 @@ h2 {
   letter-spacing: 0.04rem;
   cursor: pointer;
   border: none;
+  outline: none;
   border-radius: 60px;
 
   transition: 0.4s ease-in-out;
@@ -114,6 +115,7 @@ h2 {
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
+  outline: none;
 
   transition: 0.25s ease-in-out;
   box-shadow: 2px 0px 23px -13px rgba(1, 49, 51, 0.8);
