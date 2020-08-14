@@ -409,6 +409,10 @@ footer {
 
 /* Footer tablet size */
 @media (min-width: 710px) {
+  footer {
+    padding: 1rem 2rem;
+  }
+
   .footer-nav {
     display: flex;
     justify-content: center;
