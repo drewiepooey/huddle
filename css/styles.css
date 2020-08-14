@@ -150,6 +150,7 @@ h2 {
 
 .card-image {
   width: 100%;
+  transition: 0.5s ease;
 }
 
 .card p {
@@ -341,10 +342,6 @@ footer {
     padding-left: 6rem;
   }
 
-  .image-mockup {
-    width: 80%;
-  }
-
   .title-container {
     text-align: left;
   }
@@ -421,5 +418,17 @@ footer {
   .footer-nav ul {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+/* So images don't get too big on tablet */
+@media (min-width: 610px) {
+  .image-mockup {
+    width: 80%;
+    transition: 0.5s ease;
+  }
+
+  .card-image {
+    width: 75%;
   }
 }
