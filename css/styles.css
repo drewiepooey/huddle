@@ -71,8 +71,8 @@ h2 {
 
 .hero-text {
   max-width: 55ch;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   line-height: 1.5;
   font-weight: 600;
   color: hsl(193, 76%, 17%);
@@ -88,6 +88,7 @@ h2 {
   padding: 0.85rem 4rem;
   margin-top: 3rem;
   margin-bottom: 3.5rem;
+  white-space: nowrap;
 
   font-family: inherit;
   font-weight: 700;
@@ -220,6 +221,7 @@ footer {
 }
 
 .footer-nav ul {
+  width: 20rem;
   list-style: none;
   padding: 0;
 }
@@ -294,6 +296,10 @@ footer {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+
+    max-width: 1806px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .image-container {
@@ -370,9 +376,9 @@ footer {
     flex-flow: row;
   }
 
-  .footer-nav div {
-    margin-right: 5rem;
-    margin-left: 5rem;
+  .footer-nav {
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 
   .footer-nav ul {
@@ -388,6 +394,7 @@ footer {
   }
 
   .social {
+    display: flex;
     margin-top: 1rem;
   }
 
@@ -397,5 +404,18 @@ footer {
 
   .copyright {
     margin-top: 12rem;
+  }
+}
+
+/* Footer tablet size */
+@media (min-width: 710px) {
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    justify-content: space-between;
   }
 }
